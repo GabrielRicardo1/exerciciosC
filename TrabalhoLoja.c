@@ -15,7 +15,7 @@ int main() {
 
 	// loop principal
 	while (1) {
-		if (opcao != 's' && opcao != 'S') { // acho que nem tem muito o que comentar nesse while... C) bem intuitivo
+		if (opcao != 's' && opcao != 'S') { // acho que nem tem muito o que comentar nesse while... eh bem intuitivo
 			if (opcao == 'n' || opcao == 'N') {
 				printf("\n\nTchau tchau professor :)\n");
 			} else {
