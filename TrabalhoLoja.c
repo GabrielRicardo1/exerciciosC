@@ -1,9 +1,9 @@
-#include <stdio.h> // Biblioteca padrao de entrada e saida que usei para o printf 
+#include <stdio.h>   // Biblioteca padrao de entrada e saida que usei para o printf 
 #include <stdlib.h> // Biblioteca da funcao rand
 #include <time.h>
 
-// Coloquei umas coisas a mais para brincar um pouco e testar!
-// escrevi tudo sem acento por costume (e pq o compilador online que uso no trabalho nao estava aceitando os caracteres especiais)
+  // Coloquei umas coisas a mais para brincar um pouco e testar!
+ // escrevi tudo sem acento por costume (e pq o compilador online que uso no trabalho nao estava aceitando os caracteres especiais)
 // Gabriel Couto, Roger Eduardo e Joao Penegrin
 
 // Essas constantes vao servir para definir o numero maximo de produtos e clientes
@@ -14,7 +14,7 @@ int main() {
 	char opcao = 's'; // variavel para controlar repeticao
 
 	// loop principal
-	while (1) { // 0 = falso 1 = verdadeiro (booleanozinho basico) enquanto for verdadeiro continua(sempre vai ser verdadeiro, só para com o break)
+	while (1) {  // 0 = falso 1 = verdadeiro (booleanozinho basico) enquanto for verdadeiro continua(sempre vai ser verdadeiro, só para com o break)
 	            // ou seja, enquanto o segundo if nao for chamao, ele continua rodando infinito. se a opção 'n' for digitada ou algum caracter errado eel para a execucao
 		if (opcao != 's' && opcao != 'S') { // acho que nem tem muito o que comentar nesse while daqui pra baixo... eh bem intuitivo aqui
 			if (opcao == 'n' || opcao == 'N') {
