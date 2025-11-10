@@ -14,8 +14,9 @@ int main() {
 	char opcao = 's'; // variavel para controlar repeticao
 
 	// loop principal
-	while (1) {
-		if (opcao != 's' && opcao != 'S') { // acho que nem tem muito o que comentar nesse while... eh bem intuitivo
+	while (1) { // 0 = falso 1 = verdadeiro (booleanozinho basico) enquanto for verdadeiro continua(sempre vai ser verdadeiro, só para com o break)
+	            // ou seja, enquanto o segundo if nao for chamao, ele continua rodando infinito. se a opção 'n' for digitada ou algum caracter errado eel para a execucao
+		if (opcao != 's' && opcao != 'S') { // acho que nem tem muito o que comentar nesse while daqui pra baixo... eh bem intuitivo aqui
 			if (opcao == 'n' || opcao == 'N') {
 				printf("\n\nTchau tchau professor :)\n");
 			} else {
@@ -39,7 +40,7 @@ int main() {
 		// Mesma logica da linha de antes, mas para a quantidade de clientes (entre 1 e MAX_CLIENTES) no maximo 50 clientes
 		numClientes = (rand() % MAX_CLIENTES) + 1; // garante pelo menos 1
 
-		// loop que gera o preco dos produtos:
+		 // loop que gera o preco dos produtos:
 		// Gera precos aleatorios entre R$5 e R$100 para cada produto.
 		for (i = 0; i < numProdutos; i++) {
 			preco[i] = 5 + ((float)rand() / RAND_MAX) * 95;
@@ -61,10 +62,10 @@ int main() {
 
 		// esse loop mostra os detalhes de cada compra feita
         for (i = 0; i < numClientes; i++) {
-            // Exibe o numero do cliente, o indice do produto comprado (tambem somando +1 para exibir a partir de 1),
-            // e o valor que o cliente pagou pelo produto comprado.
-            // %-9d alinha o numero do cliente a esquerda com largura de 9 caracteres
-            // o outro %-9d alinha o numero do produto a esquerda com largura de 9 caracteres
+                // Exibe o numero do cliente, o indice do produto comprado (tambem somando +1 para exibir a partir de 1),
+               // e o valor que o cliente pagou pelo produto comprado.
+              // %-9d alinha o numero do cliente a esquerda com largura de 9 caracteres
+             // o outro %-9d alinha o numero do produto a esquerda com largura de 9 caracteres
             // %10.2f exibe o valor com 2 casas decimais, alinhado a direita com largura de 10 (isso aqui tive que pesquisar como fazia)
             printf("%-9d %-9d %10.2f\n", i + 1, compras[i] + 1, preco[compras[i]]);
         }
